@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio professionnel de Sahad Safeer, étudiant en 1re année de BTS SIO option SLAM au CNED. Développement, programmation et progression technique.">
+  <meta name="theme-color" content="#050609">
+  <title>Sahad Safeer — Portfolio BTS SIO SLAM</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script defer src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script defer src="roses.js"></script>
+  <script defer src="main.js"></script>
+</head>
+<body class="is-loading">
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+  <div class="site-loader" data-loader role="status" aria-live="polite" aria-label="Chargement du portfolio">
+    <canvas class="loader-orb" data-loader-canvas aria-hidden="true"></canvas>
+    <div class="loader-copy">
+      <span class="loader-kicker">Sahad Safeer</span>
+      <strong>INITIALISATION</strong>
+      <span class="loader-status" data-loader-status>Analyse de l'interface…</span>
+    </div>
+  </div>
+
+  <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+  <canvas id="roses-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header" data-header>
+    <div class="nav-shell">
+      <a class="brand" href="#hero" aria-label="Retour à l'accueil">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-copy"><strong>Sahad Safeer</strong><small>Prince of Spiders</small></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" data-menu-toggle>
+        <span></span><span></span>
+        <span class="sr-only">Ouvrir le menu</span>
+      </button>
+
+      <nav id="main-menu" class="main-menu" aria-label="Navigation principale" data-menu>
+        <a href="#about">Profil</a>
+        <a href="#education">Formation</a>
+        <a href="#experience">Expérience</a>
+        <a href="#professionalization">Progression</a>
+        <a href="#skills">Compétences</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="hero" class="hero section-dark" aria-labelledby="hero-title">
+      <div class="web web-top" aria-hidden="true"></div>
+      <div class="web web-bottom" aria-hidden="true"></div>
+      <div class="hero-aura" aria-hidden="true"></div>
+
+      <div class="hero-content container reveal is-visible">
+        <div class="hero-profile-wrap">
+          <div class="hero-profile-frame">
+            <img src="assets/images/profil/sahad-safeer.jpg" alt="Portrait de Sahad Safeer" width="321" height="321">
+          </div>
+          <span class="identity-chip">Prince of Spiders — visual identity</span>
+        </div>
+        <p class="eyebrow">Portfolio professionnel — BTS SIO SLAM</p>
+        <h1 id="hero-title">Sahad<br><span>Safeer</span></h1>
+        <p class="hero-role">Étudiant en informatique — développement d'applications</p>
+        <p class="hero-training">1re année de BTS SIO — option SLAM · CNED · 2026-2027</p>
+        <p class="hero-subtitle">Lurking in the shadows, building what comes next.</p>
+        <p class="hero-intro">Je documente ici ma progression, mes projets et les compétences que je développe au fil de ma formation.</p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#realisations">Voir mes réalisations</a>
+          <a class="button button-ghost" href="assets/cv/CV_Sahad_Safeer.pdf" target="_blank" rel="noopener">Voir mon CV actuel</a>
+          <a class="button button-ghost" href="#contact">Me contacter</a>
+        </div>
+      </div>
+
+      <a class="scroll-indicator" href="#about" aria-label="Descendre vers la section profil"><span></span></a>
+    </section>
+
+    <section id="about" class="section section-about" aria-labelledby="about-title">
+      <div class="container split-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 — Profil</p>
+          <h2 id="about-title">Créer quelque chose à partir d'une idée.</h2>
+          <p>Le développement m'attire pour la liberté qu'il offre : imaginer, construire, tester puis améliorer.</p>
+        </div>
+
+        <div class="about-stack">
+          <div class="glass-panel about-panel reveal">
+            <p>Je suis <strong>Sahad Safeer</strong>, étudiant en première année de <strong>BTS Services Informatiques aux Organisations</strong>, option <strong>SLAM</strong>, au CNED. J'ai choisi cette option parce que le développement et la programmation m'intéressent davantage que les réseaux.</p>
+            <p>Mon intérêt pour l'informatique vient surtout de la création. Lors d'une journée portes ouvertes, voir des étudiants développer un jeu m'a particulièrement marqué : j'ai aimé l'idée de pouvoir partir de presque rien et obtenir un résultat concret.</p>
+            <p>Aujourd'hui, je m'intéresse surtout au <strong>développement logiciel</strong>, à la <strong>programmation</strong> et à l'<strong>intelligence artificielle</strong>. La cybersécurité m'intéresse également et le cloud est un domaine que j'aimerais mieux découvrir.</p>
+          </div>
+
+          <div class="vision-card glass-panel reveal">
+            <p class="eyebrow">À long terme</p>
+            <h3>Un système d'exploitation adaptatif.</h3>
+            <p>Un projet qui m'attire serait de créer mon propre système d'exploitation intégrant une IA capable d'apprendre de son utilisateur et de s'adapter à ses habitudes.</p>
+            <div class="interest-row" aria-label="Centres d'intérêt">
+              <span>Jeux vidéo</span><span>Écriture</span><span>IA</span><span>Nouvelles technologies</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section section-timeline" aria-labelledby="education-title">
+      <div class="container timeline-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 — Formation</p>
+          <h2 id="education-title">Mon parcours de formation.</h2>
+          <p>Une trajectoire encore en construction, centrée aujourd'hui sur le développement d'applications.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal timeline-current">
+            <span class="timeline-dot"></span>
+            <div>
+              <time datetime="2026">2026 — aujourd'hui</time>
+              <h3>BTS Services Informatiques aux Organisations</h3>
+              <p class="timeline-subtitle">Option SLAM — Solutions Logicielles et Applications Métiers</p>
+              <p><strong>CNED · Formation à distance · 1re année · 2026-2027.</strong> J'y développe progressivement mes bases en programmation, algorithmique, développement d'applications et dans les autres domaines du BTS SIO.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div>
+              <time datetime="2022/2025">2022 — 2025</time>
+              <h3>Baccalauréat général</h3>
+              <p class="timeline-subtitle">Spécialités Mathématiques et Sciences de l'Ingénieur</p>
+              <p>Lycée Jules Ferry — Coulommiers.</p>
+              <div class="timeline-notes"><span>Maquette de barrage hydroélectrique</span><span>Grand Oral : géométrie 3D & navigation de drones</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="certifications-grid reveal">
+          <article class="certification-card glass-panel">
+            <span class="certification-year">2024</span>
+            <div><p class="eyebrow">Certification</p><h3>Cambridge English</h3><p>Niveau <strong>B2</strong> obtenu en 2024.</p></div>
+          </article>
+          <article class="certification-card glass-panel">
+            <span class="certification-year">PIX</span>
+            <div><p class="eyebrow">Certification</p><h3>PIX</h3><p>Certification obtenue. Le certificat n'est pas disponible actuellement.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section section-experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">03 — Expérience professionnelle</p>
+          <h2 id="experience-title">Responsabilité, autonomie et relation client.</h2>
+        </div>
+
+        <article class="experience-card glass-panel reveal">
+          <div class="experience-date"><span>Jan. 2026</span><span class="date-line" aria-hidden="true"></span><span>Août 2026</span></div>
+          <div class="experience-content">
+            <div class="experience-heading">
+              <div>
+                <p class="experience-kicker">Zenitude Hôtel-Résidences Val d'Europe · Quality Aparthotel · Chessy</p>
+                <h3>Réceptionniste</h3>
+              </div>
+              <span class="experience-badge">Expérience professionnelle</span>
+            </div>
+            <p>Cette expérience m'a permis de travailler dans un environnement professionnel où il fallait gérer les clients, les imprévus et le relais entre plusieurs équipes, parfois seul à la réception en soirée.</p>
+            <div class="experience-columns">
+              <div>
+                <h4>Principales missions</h4>
+                <ul>
+                  <li>Accueil, enregistrement des clients et récupération des informations nécessaires.</li>
+                  <li>Encaissement des cautions et des séjours, remise et préparation des clés.</li>
+                  <li>Gestion des bagages et des arrivées tardives.</li>
+                  <li>Réponses aux messages et commentaires, principalement sur Booking et Expedia.</li>
+                  <li>Interventions de premier niveau dans les appartements : climatisation, télévision, plaques de cuisson, stores, etc.</li>
+                  <li>Préparation du planning des agents d'entretien et vérification de certains appartements.</li>
+                  <li>Fermeture de la piscine et sécurisation de différentes portes de l'établissement.</li>
+                  <li>Gestion de la désactivation de l'alarme incendie dans certaines situations.</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Environnement & acquis</h4>
+                <p class="tool-line"><span>Logiciel</span><strong>MEWS</strong></p>
+                <p>Travail avec les autres réceptionnistes, les responsables et l'agent de nuit pour assurer un relais fiable.</p>
+                <div class="soft-tags"><span>Communication</span><span>Organisation</span><span>Autonomie</span><span>Gestion des imprévus</span><span>Travail sous pression</span><span>Responsabilités</span><span>Travail en équipe</span></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="professionalization" class="section section-professionalization" aria-labelledby="professionalization-title">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">04 — Parcours de professionnalisation</p>
+          <h2 id="professionalization-title">Construire mes bases, puis les transformer en projets.</h2>
+          <p>Cette partie évoluera pendant les deux années du BTS avec mes ateliers, projets, expériences en entreprise et choix de poursuite d'études.</p>
+        </div>
+
+        <div class="pro-path">
+          <article class="pro-step reveal"><span class="pro-step-index">01</span><div><time>Avant le BTS</time><h3>Premières bases techniques</h3><p>Python principalement, quelques bases en HTML, de très premières utilisations de CSS et JavaScript, ainsi que des découvertes de Git/GitHub, Linux et de différents outils pendant mon passage à Ynov.</p></div></article>
+          <article class="pro-step reveal"><span class="pro-step-index">02</span><div><time>2026-2027</time><h3>Choix du BTS SIO — SLAM</h3><p>Le BTS SIO était la formation la plus proche de ce que je recherchais après le bac, notamment pour le développement et la cybersécurité. J'ai choisi SLAM car je suis davantage attiré par la programmation que par les réseaux.</p></div></article>
+          <article class="pro-step reveal"><span class="pro-step-index">03</span><div><time>Objectif 1re année</time><h3>Devenir plus autonome</h3><p>Mieux maîtriser Python, apprendre correctement HTML, CSS et JavaScript, découvrir d'autres langages, savoir réellement utiliser Linux et produire plusieurs projets concrets montrant ma progression.</p></div></article>
+          <article class="pro-step reveal pro-step-future"><span class="pro-step-index">04</span><div><time>Mai — août 2027</time><h3>Première expérience informatique en entreprise</h3><p>Je vise un stage de 4 à 5 semaines consécutives en Île-de-France, de préférence en Seine-et-Marne, sur des missions de développement web ou applicatif. Je privilégie une expérience sur place.</p></div></article>
+          <article class="pro-step reveal pro-step-future"><span class="pro-step-index">05</span><div><time>Après le BTS</time><h3>Poursuivre mes études</h3><p>J'envisage une licence ou éventuellement une école d'ingénieurs. Le développement logiciel et le DevSecOps m'intéressent particulièrement, sans vouloir me limiter trop tôt à un seul métier.</p></div></article>
+        </div>
+
+        <div class="e5-panel glass-panel reveal">
+          <div class="e5-intro"><p class="eyebrow">Bloc 1 — E5</p><h3>Support et mise à disposition de services informatiques</h3><p>Ces compétences seront reliées uniquement aux réalisations qui permettent réellement de les justifier.</p></div>
+          <ul class="e5-competencies" aria-label="Compétences officielles du bloc 1">
+            <li>Gérer le patrimoine informatique</li><li>Répondre aux incidents et aux demandes d'assistance et d'évolution</li><li>Développer la présence en ligne de l'organisation</li><li>Travailler en mode projet</li><li>Mettre à disposition des utilisateurs un service informatique</li><li>Organiser son développement professionnel</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">05 — Compétences techniques</p>
+          <h2 id="skills-title">Mon niveau réel, sans le surévaluer.</h2>
+          <p>Les statuts indiquent une expérience pratique, pas un niveau de maîtrise.</p>
+        </div>
+
+        <div class="skill-legend reveal" aria-label="Légende des statuts"><span><i class="status-dot status-used"></i> Déjà utilisé</span><span><i class="status-dot status-learning"></i> En apprentissage / à consolider</span><span><i class="status-dot status-program"></i> Pas encore utilisé</span></div>
+
+        <div class="skill-grid skill-grid-expanded">
+          <article class="skill-card reveal"><span class="skill-number">01</span><h3>Programmation</h3><p>Python est le langage que j'ai le plus pratiqué jusqu'à présent, principalement à travers des exercices et quelques petits projets.</p><ul class="skill-tags"><li data-status="used">Python · le plus pratiqué</li><li data-status="learning">Algorithmique</li><li data-status="program">Java</li></ul></article>
+          <article class="skill-card reveal"><span class="skill-number">02</span><h3>Développement web</h3><p>J'ai déjà manipulé les technologies du web, mais je dois encore les apprendre suffisamment pour être autonome.</p><ul class="skill-tags"><li data-status="learning">HTML · bases</li><li data-status="learning">CSS · premières utilisations</li><li data-status="learning">JavaScript · premières utilisations</li></ul></article>
+          <article class="skill-card reveal"><span class="skill-number">03</span><h3>Outils de développement</h3><p>Des outils déjà rencontrés que je souhaite réapprendre ou utiliser plus régulièrement dans de vrais projets.</p><ul class="skill-tags"><li data-status="used">VS Code · éditeur principal</li><li data-status="learning">Git · à réapprendre</li><li data-status="learning">GitHub · bases</li><li data-status="learning">Figma · déjà utilisé</li></ul></article>
+          <article class="skill-card reveal"><span class="skill-number">04</span><h3>Systèmes & environnements</h3><p>Premières expérimentations, sans les présenter comme une maîtrise autonome.</p><ul class="skill-tags"><li data-status="learning">Linux · débutant</li><li data-status="learning">Bash · très peu utilisé</li><li data-status="learning">Docker · expérimentations assistées</li><li data-status="learning">VMware · découverte</li></ul></article>
+          <article class="skill-card reveal"><span class="skill-number">05</span><h3>Données</h3><p>Ces technologies font partie des domaines que je dois encore découvrir et pratiquer pendant la formation.</p><ul class="skill-tags"><li data-status="program">SQL</li><li data-status="program">MySQL</li><li data-status="program">PostgreSQL</li><li data-status="program">MCD / MLD</li></ul></article>
+          <article class="skill-card reveal"><span class="skill-number">06</span><h3>Autres outils</h3><p>Quelques outils abordés en dehors d'un projet suffisamment important pour être présenté comme réalisation.</p><ul class="skill-tags"><li data-status="learning">Canva · débutant</li><li data-status="program">Wireshark</li><li data-status="program">Nmap</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="realisations" class="section section-projects" aria-labelledby="realisations-title">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">06 — Réalisations</p>
+          <h2 id="realisations-title">Peu de projets pour l'instant, mais de vrais projets.</h2>
+          <p>La première année vient de commencer. Cette section se remplira avec les projets BTS, leurs captures, fichiers, difficultés, solutions et compétences réellement mobilisées.</p>
+        </div>
+
+        <div class="project-toolbar reveal" aria-label="Filtrer les réalisations"><button class="filter-button is-active" type="button" data-project-filter="all">Toutes</button><button class="filter-button" type="button" data-project-filter="bts">BTS</button><button class="filter-button" type="button" data-project-filter="personal">Personnel</button></div>
+
+        <div class="project-grid project-grid-focused" data-project-grid>
+          <article class="project-card reveal" data-tilt data-category="personal">
+            <div class="project-visual visual-one"><div class="mini-browser"><span></span><span></span><span></span><div class="mini-title">Sahad Safeer</div></div></div>
+            <div class="project-copy"><div class="project-meta"><span>Personnel</span><span>2026</span></div><h3>Portfolio professionnel</h3><p>Évolution de mon ancien univers « Prince of Spiders » vers un portfolio professionnel BTS SIO, sans perdre son identité visuelle sombre et interactive.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Three.js</span></div><p class="project-e5-state">Projet en évolution continue.</p><a href="realisation.html?id=portfolio">Voir la réalisation <span>↗</span></a></div>
+          </article>
+
+          <article class="project-card reveal" data-tilt data-category="personal">
+            <div class="project-visual visual-two"><div class="circle-grid" aria-hidden="true"></div></div>
+            <div class="project-copy"><div class="project-meta"><span>Personnel · Python</span><span>En cours</span></div><h3>Générateur de cercle Minecraft</h3><p>Un petit outil Python qui génère dans le terminal un cercle servant de guide aux builders Minecraft. Le projet est encore simple et pourra être amélioré puis publié sur GitHub.</p><div class="project-tags"><span>Python</span><span>Algorithmique</span><span>Terminal</span></div><p class="project-e5-state">Projet personnel — non présenté comme réalisation E5 pour le moment.</p><a href="realisation.html?id=minecraft-circle">Voir la réalisation <span>↗</span></a></div>
+          </article>
+        </div>
+
+        <div class="bts-project-placeholder glass-panel reveal">
+          <div><p class="eyebrow">BTS SIO — à venir</p><h3>Les prochaines réalisations seront documentées ici.</h3><p>Pour chaque projet : contexte, consigne, travail personnel, technologies, captures, fichiers, GitHub si disponible, difficultés rencontrées et compétences acquises.</p></div>
+          <span class="placeholder-pulse" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-contact" aria-labelledby="contact-title">
+      <div class="container contact-layout">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">07 — Contact</p>
+          <h2 id="contact-title">Une opportunité dans l'ombre ?<br><span>Faisons-la apparaître.</span></h2>
+          <p>Je suis basé en Seine-et-Marne et je reste disponible pour échanger autour de ma formation, d'un projet ou d'une future opportunité.</p>
+
+          <div class="contact-details">
+            <a href="mailto:sahad.safeer23@gmail.com"><span>E-mail</span><strong>sahad.safeer23@gmail.com</strong></a>
+            <div><span>Localisation</span><strong>Seine-et-Marne (77), Île-de-France</strong></div>
+            <a href="https://www.linkedin.com/in/sahad-safeer" target="_blank" rel="noopener"><span>LinkedIn</span><strong>linkedin.com/in/sahad-safeer</strong></a>
+            <a href="https://github.com/Noctix-77" target="_blank" rel="noopener"><span>GitHub</span><strong>github.com/Noctix-77</strong></a>
+          </div>
+
+          <div class="contact-actions"><a class="button button-primary" href="mailto:sahad.safeer23@gmail.com">Envoyer un e-mail</a><a class="button button-ghost" href="assets/cv/CV_Sahad_Safeer.pdf" download>Télécharger mon CV actuel</a></div>
+        </div>
+
+        <form class="contact-form glass-panel reveal" data-contact-form novalidate>
+          <div class="form-heading"><p class="eyebrow">Formulaire</p><h3>Écrire un message.</h3><p>Le formulaire prépare pour l'instant le message dans votre application de messagerie. Une connexion directe à un service d'envoi pourra être ajoutée ensuite.</p></div>
+          <label><span>Nom</span><input type="text" name="name" autocomplete="name" required></label>
+          <label><span>E-mail</span><input type="email" name="email" autocomplete="email" required></label>
+          <label><span>Objet</span><input type="text" name="subject" required></label>
+          <label><span>Message</span><textarea name="message" rows="5" required></textarea></label>
+          <button class="button button-primary" type="submit">Préparer le message</button>
+          <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Sahad Safeer</span><span>Prince of Spiders — visual identity</span><a href="#hero">Retour en haut ↑</a></div></footer>
+</body>
+</html>
