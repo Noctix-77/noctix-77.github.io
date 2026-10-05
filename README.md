@@ -1,6 +1,6 @@
 # Portfolio professionnel — Sahad Safeer
 
-Portfolio BTS SIO SLAM conservant l'identité visuelle de l'ancien univers « Prince of Spiders ».
+Portfolio BTS SIO SLAM
 
 ## Fichiers principaux
 
@@ -11,22 +11,6 @@ Portfolio BTS SIO SLAM conservant l'identité visuelle de l'ancien univers « Pr
 - `realisation.html` : modèle de fiche détaillée.
 - `realisations-data.js` : contenu des fiches de réalisations.
 - `realisation.js` : rendu dynamique d'une fiche.
-
-## Photo
-
-La photo actuelle est temporaire et provient de l'ancien CV. Pour la remplacer, conserver simplement le nom :
-
-`assets/images/profil/sahad-safeer.jpg`
-
-ou modifier le chemin correspondant dans `index.html`.
-
-## CV
-
-Le PDF actuel est conservé dans :
-
-`assets/cv/CV_Sahad_Safeer.pdf`
-
-Il devra être remplacé plus tard par le nouveau CV orienté recherche de stage BTS SIO SLAM.
 
 ## Formulaire de contact
 
